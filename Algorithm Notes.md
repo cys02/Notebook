@@ -1387,7 +1387,7 @@ static Ret exgcd(int a,int b) {
 
 用于求解下面的方程组：
 
-<img src="/Users/lovelylittlemon/Library/Application Support/typora-user-images/image-20230330204610065.png" alt="image-20230330204610065" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/cys02/ImageRepository/master/image-20230330204610065.png" alt="image-20230330204610065" style="zoom:50%;" />
 
 
 
@@ -1886,7 +1886,7 @@ for(int i=1;i<=n;i++){
 
 解决方法：
 
-1.  $dp[i]=max(dp[1]+1,dp[2]+1,...,dp[i-1]+1)$ ，转移条件 $a[j]<a[i]$ ，时间复杂度 $O(n^{2})$ 
+1.  $dp[i]=max(dp[1]+1,dp[2]+1,...,dp[i-1]+1)$ ，转移条件 $a[j]< a[i]$ ，时间复杂度 $O(n^{2})$ 
 2. 二分找到目前队列中第一个比它大的值并进行替换，时间复杂度 $O(nlogn)$ 
 
 其中，第一种方法可以在状态转移时记录从哪个状态转移而来，从而记录了最长的上升子序列是谁
